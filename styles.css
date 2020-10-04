@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+margin:0;
+padding: 0;
+    
+
+background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.checkout{
+    
+      font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+.date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+.info {
+  margin-bottom: 20px;
+}
+
+
+
+.container{
+  text-align: center;
+  margin-top: 180px;
+}
+.btn{
+  border: 1px solid #008891;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+    top: 0%;
+}
+
+
+
+.ps{
+    margin-bottom: 40px;
+    background-size:100% 100%;
+ 
+}
+
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.ps a img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.ps a:hover > img{
+    filter: none;
+}
+
+.border{
+    
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: #3498db;
+}
+
+.mySection h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color: white;
+    font-size: 40px;
+}
+
+.btn1,.btn3{
+  color: #008891;
+  position: relative;
+    bottom: 100px;
+}
+.btn2,.btn4{
+  color: #fff;
+  position: relative;
+    bottom: 100px;
+}
+.btn1:hover,.btn3:hover{
+  color: #fff;
+}
+.btn2:hover,.btn4:hover{
+  color: #008891;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #008891;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before,.btn3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn2::before,.btn4::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.btn2::before,.btn4::before{
+  height: 180%;
+}
+.btn1:hover::before,.btn3:hover::before{
+  height: 180%;
+}
+.btn2:hover::before,.btn4:hover::before{
+  height: 0%;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+background: #06beb6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  color: white;
+  font-size: 30px;
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  overflow-x: hidden;
+  padding-top: 20px;
+    
+}
+#welcome{
+    
+    margin-left: 200px;
+    
+}
+
+  .bold{
+    background-image: linear-gradient(
+      transparent calc(65% - 5px),
+      darken($color, 15%) 5px,
+    );
+    background-size: 0;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+  }
+
+  &:hover {
+    .bold {
+      background-size: 100%;
+    }
+  }
+
+
+
+/* THIS PART IS FOR THE EXPERIENCE TITLE
+-------------------------------------- */
+
+
+/* THIS PART IS FOR THE END OF THE  EXPERIENCE TITLE
+-------------------------------------- */
+
+
+
+
+
+css
+
+
+/* Grid
+-------------------------------------- */
+/* Define the default grid (it's all in one column) */
+.form {
+  display: grid;
+  grid-row-gap: 5px;
+}
+
+/* Switch to two columns in wider viewports */
+@media (min-width: 29.375rem) {
+  .form {
+    grid-column-gap: 25px;
+    grid-template-areas: 
+      "label-name  label-email"
+      "field-name  field-email"
+      "label-msg   ."
+      "field-msg   field-msg"
+      "button      .";
+  }
+}
+
+.resume_work{
+    
+    position: relative;
+    margin-left: 200px;
+}
+
+.semi-bold{
+    
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+.position{
+    margin-bottom: 50px;
+    list-style-type: square;
+    
+}
+
+
+/* The values below correspond to the values shown in grid-template-areas above, placing the items on the grid accordingly. Note that the grid-area value does NOT have to match the class name. For example, .field-message has field-msg as its grid-area. */
+@media (min-width: 29.375rem) {
+  .label-name {
+    grid-area: label-name;
+  }
+  .label-email {
+    grid-area: label-email;
+  }
+  .label-message {
+    grid-area: label-msg;
+  }
+  .field-name {
+    grid-area: field-name;
+  }
+  .field-email {
+    grid-area: field-email;
+  }
+  .field-message {
+    grid-area: field-msg;
+  }
+  .buttonsub {
+    grid-area: button;
+  }
+}
+
+/* This is the styling for my form */
+
+.form {
+	width: 340px;
+	height: 440px;
+	background: #e6e6e6;
+	border-radius: 8px;
+	box-shadow: 0 0 40px -10px #000;
+	margin: calc(50vh - 220px) auto;
+	padding: 20px 30px;
+	max-width: calc(100vw - 40px);
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	position: relative
+}
+
+h2 {
+	margin: 10px 0;
+	padding-bottom: 10px;
+	width: 180px;
+	color: #78788c;
+	border-bottom: 3px solid #78788c
+}
+
+input {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	background: none;
+	outline: none;
+	resize: none;
+	border: 0;
+	font-family: 'Montserrat', sans-serif;
+	transition: all .3s;
+	border-bottom: 2px solid #bebed2
+}
+
+input:focus {
+	border-bottom: 2px solid #78788c
+}
+
+p:before {
+	content: attr(type);
+	display: block;
+	margin: 28px 0 0;
+	font-size: 14px;
+	color: #5a5a5a
+}
+
+.sbmt {
+	float: right;
+	padding: 8px 12px;
+	margin: 8px 0 0;
+	font-family: 'Montserrat', sans-serif;
+	border: 2px solid #78788c;
+	background: 0;
+	color: #5a5a6e;
+	cursor: pointer;
+	transition: all .3s
+}
+
+button:hover {
+	background: #78788c;
+	color: #fff
+}
+
+
+/* This is the end of the styling for my form */
+
+
+
+.field {
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+@media (max-width: 29.3125rem) {
+  .label-email {
+    margin-top: 20px;
+  }
+}
+
+.label-message {
+  margin-top: 20px;
+}
+
+.button {
+  appearance: none;
+  background-color: orange;
+  border: none;
+  font-size: .9375rem;
+  margin-top: 20px;
+  padding: 10px;
+  /* without this, the button would be as 
+  wide as its column (and the Name field) */
+  justify-self: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+iframe{
+    
+    
+    margin-left: 500px;
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+.intro{
+    margin-left: 200px;
+    margin-right: 50px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #f1f1f1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #818181;
+    
+}
+
+footer{
+    
+    margin-left: 1400px;
+    
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
